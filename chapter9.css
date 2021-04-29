@@ -1,10 +1,11 @@
-*{
-box-sizing: border-box;
-margin　o;
-padding 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header {
+  width: 100%;
   height: 50px;
   background-color: #ff9a4b;
 }
@@ -21,7 +22,6 @@ main {
   padding: 10px;
   position: relative;
   background-color: #eee;
-  display: block;
 }
 
 .blog-item:last-child {
@@ -29,47 +29,61 @@ main {
 }
 
 .blog-image1 {
- height: 150px;
- background-image: url(flow01.png);
- background-position: bottom;
- background-size: cover; 
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
 }
 
 .blog-image2 {
   height: 150px;
-  background-image: url(flow02.png);
+  background-image: url(img/flow02.png);
   background-position: bottom;
-  background-size: cover; 
- }
+  background-size: cover;
+}
 
- .blog-image3 {
+.blog-image3 {
   height: 150px;
-  background-image: url(flow03.png);
+  background-image: url(img/flow03.png);
   background-position: bottom;
-  background-size: cover; 
- }
- 
- .number {
-   position: absolute;
-   top: 0;
-   left: 0;
-   background-color: #ff9a4b;
-   color: #fff;
- }
+  background-size: cover;
+}
 
- .blog-text-heading {
-   margin: 15px 0 5px;
- }
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
 
- footer{
-   height: 50px;
-   background-color: #aaa;
- }
+.blog-text-heading {
+  margin: 15px 0 5px;
+}
 
- @media screen and (max-width: 768px) {
- 
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
   main {
     width: 100%;
     display: block;
   }
+  .blog-item {
+    width: 90%;
+    margin: 0 0 20px 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .blog-item:last-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
+  header footer {
+    width: 100%;
+  }
+}
